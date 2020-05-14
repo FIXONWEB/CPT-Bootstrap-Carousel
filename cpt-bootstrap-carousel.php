@@ -3,7 +3,7 @@
 Plugin Name: CPT Bootstrap Carousel
 Plugin URI: http://www.tallphil.co.uk/bootstrap-carousel/
 Description: A custom post type for choosing images and content which outputs <a href="http://getbootstrap.com/javascript/#carousel" target="_blank">Bootstrap Carousel</a> from a shortcode. Requires Bootstrap javascript and CSS to be loaded separately.
-Version: 1.13
+Version: 1.14
 Author: Phil Ewels
 Author URI: http://phil.ewels.co.uk
 Text Domain: cpt-bootstrap-carousel
@@ -11,6 +11,10 @@ License: GPLv2
 */
 
 // Initialise - load in translations
+
+require 'plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker('https://github.com/FIXONWEB/CPT-Bootstrap-Carousel', __FILE__, 'CPT-Bootstrap-Carousel/cpt-bootstrap-carousel');
+
 function cptbc_loadtranslations () {
     $plugin_dir = basename(dirname(__FILE__)).'/languages';
     load_plugin_textdomain( 'cpt-bootstrap-carousel', false, $plugin_dir );
@@ -24,6 +28,4 @@ require_once('src/cptbc-admin.php');
 require_once('src/cptbc-settings.php');
 require_once('src/cptbc-frontend.php');
 
-require 'plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker('https://github.com/FIXONWEB/CPT-Bootstrap-Carousel', __FILE__, 'CPT-Bootstrap-Carousel/cpt-bootstrap-carousel');
 
