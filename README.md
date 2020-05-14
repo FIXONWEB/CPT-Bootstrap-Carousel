@@ -156,6 +156,10 @@ You need to make sure that each image is the same height. You can do this by set
 
 ## Changelog
 
+### 1.12
+* Inicio do fork em FIXONWEB
+* Adicionado fonte de atualização apontando para https://github.com/FIXONWEB/CPT-Bootstrap-Carousel
+
 ### 1.11
 
 * Added support for crossfading images instead of sliding
