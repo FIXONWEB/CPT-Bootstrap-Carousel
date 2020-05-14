@@ -23,3 +23,7 @@ require_once('src/cptbc-init.php');
 require_once('src/cptbc-admin.php');
 require_once('src/cptbc-settings.php');
 require_once('src/cptbc-frontend.php');
+
+require 'plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker('https://github.com/FIXONWEB/CPT-Bootstrap-Carousel', __FILE__, 'CPT-Bootstrap-Carousel/cpt-bootstrap-carousel');
+
