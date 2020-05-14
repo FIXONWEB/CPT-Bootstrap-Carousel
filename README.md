@@ -156,6 +156,9 @@ You need to make sure that each image is the same height. You can do this by set
 
 ## Changelog
 
+### 1.13
+* No front-end posts_per_page = 1 
+
 ### 1.12
 * Inicio do fork em FIXONWEB
 * Adicionado fonte de atualização apontando para https://github.com/FIXONWEB/CPT-Bootstrap-Carousel

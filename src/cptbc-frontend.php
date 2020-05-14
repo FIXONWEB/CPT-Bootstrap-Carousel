@@ -35,7 +35,7 @@ function cptbc_frontend($atts){
     $id = rand(0, 999); // use a random ID so that the CSS IDs work with multiple on one page
     $args = array(
         'post_type' => 'cptbc',
-        'posts_per_page' => '-1',
+        'posts_per_page' => '1',
         'orderby' => $atts['orderby'],
         'order' => $atts['order']
     );
